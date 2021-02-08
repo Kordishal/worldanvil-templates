@@ -1,0 +1,26 @@
+.property-box {
+    border: 2px solid #19292B;
+    background-color: #f2f8fb;
+    color: #19292B;
+    padding: 5px 5px 0;
+}
+
+.text-muted {
+    color: #19292B;
+}
+
+.bottom-margin {
+    margin-bottom: 20px;
+}
+
+.text-center {
+    font-weight: 900;
+}
+
+.character-page {
+    color: #19292B;
+    background-color: #DBD3A2;
+    border: #9A8664 solid 10px;
+    border-radius: 15px;
+    padding: 20px;
+}

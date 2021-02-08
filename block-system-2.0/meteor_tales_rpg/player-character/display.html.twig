@@ -1,0 +1,455 @@
+{% macro selectLegacy(input) %}
+    {% if input == "Elf" %}
+        Inner Hearth
+    {% elseif input == "Human" %}
+        Quick Learner
+    {% elseif input == "Dwarf" %}
+        Runic Blood
+    {% elseif input == "Brutgor" %}
+        Brutgorian Rage
+    {% elseif input == "Sarcanta" %}
+        Dragon Breath
+    {% elseif input == "Sirakrat" %}
+        Draw Upon Pain
+    {% elseif input == "Serenian" %}
+        Spider Climb
+    {% elseif input == "Fay" %}
+        Control Animal
+    {% elseif input == "Medai" %}
+        Snake Hair
+    {% elseif input == "Gargoyle" %}
+        Stone Form
+    {% elseif input == "Gaal" %}
+        Between Worlds
+    {% else %}
+        Unknown Race
+    {% endif %}
+{% endmacro selectLegacy %}
+{% macro selectRacialAbilities(input) %}
+    {% if input == "Elf" %}
+        Heat Vision<br>
+        Natural Attunement
+    {% elseif input == "Human" %}
+        None
+    {% elseif input == "Dwarf" %}
+        Miner<br>
+        Craftsmanship
+    {% elseif input == "Brutgor" %}
+        Giant Blood
+    {% elseif input == "Sarcanta" %}
+        Heat Vision<br>
+        Dragon Anatomy<br>
+        Dragon Rest<br>
+        Cold Blooded
+    {% elseif input == "Sirakrat" %}
+        Regeneration<br>
+        Tolerance
+    {% elseif input == "Serenian" %}
+        Night Vision
+    {% elseif input == "Fay" %}
+        Sentinel Spawn<br>
+        Tree born
+    {%- elseif input == "Medai" %}
+        Serpent Blood<br>
+        Cold Blooded
+    {%- elseif input == "Gargoyle" %}
+        Flying Race<br>
+        Stone Blood
+    {%- elseif input == "Gaal" %}
+        Immortal<br>
+        Slow Learner<br>
+        Extraplanar
+    {%- else %}
+        Unknown Race
+    {%- endif %}
+{% endmacro selectRacialAbilities %}
+{% macro selectRolls(input) %}
+    {% if input == "Low" %}
+        1d4
+    {% elseif input == "Medium" %}
+        1d6
+    {% elseif input == "High" %}
+        1d8
+    {% elseif input == "Exceptional" %}
+        1d10
+    {% elseif input == "Legendary" %}
+        1d12
+    {% elseif input == "Unusual" %}
+        2d8
+    {% elseif input == "Extraordinary" %}
+        2d10
+    {% elseif input == "Phenomenal" %}
+        2d12
+    {%- else %}
+        1d4
+    {%- endif %}
+{% endmacro selectRolls %}
+{% macro selectAdvantageRoll(input) %}
+    {% if input == "Low" %}
+        1d12
+    {% elseif input == "Medium" %}
+        1d10
+    {% elseif input == "High" %}
+        1d8
+    {% elseif input == "Exceptional" %}
+        1d6
+    {% elseif input == "Legendary" %}
+        1d4
+    {% elseif input == "Unusual" %}
+        1d3
+    {% elseif input == "Extraordinary" %}
+        1d2
+    {% elseif input == "Phenomenal" %}
+        1
+    {%- else %}
+        1d12
+    {%- endif %}
+{% endmacro selectAdvantageRoll %}
+{% macro selectDistance(input) %}
+    {% if input == "Low" %}
+        4
+    {% elseif input == "Medium" %}
+        6
+    {% elseif input == "High" %}
+        8
+    {% elseif input == "Exceptional" %}
+        10
+    {% elseif input == "Legendary" %}
+        12
+    {% elseif input == "Unusual" %}
+        16
+    {% elseif input == "Extraordinary" %}
+        20
+    {% elseif input == "Phenomenal" %}
+        24
+    {%- else %}
+        4
+    {%- endif %}
+{% endmacro selectDistance %}
+{% macro selectStamina(input) %}
+    {% if input == "Low" %}
+        80
+    {% elseif input == "Medium" %}
+        100
+    {% elseif input == "High" %}
+        120
+    {% elseif input == "Exceptional" %}
+        140
+    {% elseif input == "Legendary" %}
+        160
+    {% elseif input == "Unusual" %}
+        180
+    {% elseif input == "Extraordinary" %}
+        200
+    {% elseif input == "Phenomenal" %}
+        220
+    {%- else %}
+        80
+    {%- endif %}
+{% endmacro selectStamina %}
+{% macro selectToleranceValues(input) %}
+    {% if input == "Low" %}
+        1-4,5-6,7-8,10,20,30
+    {% elseif input == "Medium" %}
+        1-6,7-9,10-12,20,30,40
+    {% elseif input == "High" %}
+        1-8,9-12,13-16,30,40,50
+    {% elseif input == "Exceptional" %}
+        1-10,11-15,16-20,40,50,60
+    {% elseif input == "Legendary" %}
+        1-12,13-18,19-24,50,60,70
+    {% elseif input == "Unusual" %}
+        1-16,17-24,25-32,60,70,80
+    {% elseif input == "Extraordinary" %}
+        1-20,21-30,31-40,100,120,140
+    {% elseif input == "Phenomenal" %}
+        1-24,25-36,37-48,120,140,160
+    {%- else %}
+        1-4,5-6,7-8,10,20,30
+    {%- endif %}
+{% endmacro selectToleranceValues %}
+{% macro attributeRow(name, level, h1, c1, h2, c2, h3, c3) %}
+    <div class="row">
+        <div class="col-md-1">
+            {{ name }}
+        </div>
+        <div class="col-md-1">
+            {{ level }}
+        </div>
+        <div class="col-md-1">
+            <div>{{ h1 }}</div>
+            <div>{{ c1 }}</div>
+        </div>
+        <div class="col-md-1">
+            <div>{{ h2 }}</div>
+            <div>{{ c2 }}</div>
+        </div>
+        <div class="col-md-1">
+            <div>{{ h3 }}</div>
+            <div>{{ c3 }}</div>
+        </div>
+    </div>
+{% endmacro %}
+{% macro selectHeading1(input) %}
+    {% if input == "Might" %}
+        Damage
+    {% elseif input == "Speed" %}
+        Movement Rate
+    {% elseif input == "Endurance" %}
+        Stamina / Recovery Rate
+    {% elseif input == "Awareness" %}
+        Skill Points
+    {% elseif input == "Willpower" %}
+        Effective Hours
+    {% elseif input == "Instinct" %}
+        Action Roll
+    {% else %}
+        Unknown
+    {%- endif %}
+{% endmacro selectHeading1 %}
+{% macro selectContent1(input, level) %}
+    {% if input == "Might" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% elseif input == "Speed" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% elseif input == "Endurance" %}
+        {%- set stamina = _self.selectStamina(level)|trim -%}
+        {{ stamina }} / {{ stamina // 2 }}
+    {% elseif input == "Awareness" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% elseif input == "Willpower" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% elseif input == "Instinct" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% else %}
+        Unknown
+    {%- endif %}
+{% endmacro selectContent1 %}
+{% macro selectHeading2(input) %}
+    {% if input == "Might" %}
+        Throw
+    {% elseif input == "Speed" %}
+        Action Cycle
+    {% elseif input == "Endurance" %}
+        Checks
+    {% elseif input == "Awareness" %}
+        Perception Range
+    {% elseif input == "Willpower" %}
+        Mental Defense
+    {% elseif input == "Instinct" %}
+        Advantage Roll
+    {% else %}
+        Unknown
+    {%- endif %}
+{% endmacro selectHeading2 %}
+{% macro selectContent2(input, level) %}
+    {% if input == "Might" %}
+        {{ _self.selectDistance(level) }}
+    {% elseif input == "Speed" %}
+        {{ _self.selectDistance(level) }}
+    {% elseif input == "Endurance" %}
+        Tolerance
+    {% elseif input == "Awareness" %}
+        {{ _self.selectDistance(level) }}
+    {% elseif input == "Willpower" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% elseif input == "Instinct" %}
+        [roll:{{ _self.selectAdvantageRoll(level) }}]
+    {% else %}
+        Unknown
+    {%- endif %}
+{% endmacro selectContent2 %}
+{% macro selectHeading3(input) %}
+    {% if input == "Might" %}
+        Checks
+    {% elseif input == "Speed" %}
+        Checks
+    {% elseif input == "Endurance" %}
+        Tolerance
+    {% elseif input == "Awareness" %}
+        Checks / Development
+    {% elseif input == "Willpower" %}
+        Checks
+    {% elseif input == "Instinct" %}
+        Checks
+    {% else %}
+        Unknown
+    {%- endif %}
+{% endmacro selectHeading3 %}
+{% macro selectContent3(input, level) %}
+    {% if input == "Might" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% elseif input == "Speed" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% elseif input == "Endurance" %}
+        Tolerance
+    {% elseif input == "Awareness" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% elseif input == "Willpower" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% elseif input == "Instinct" %}
+        [roll:{{ _self.selectRolls(level) }}]
+    {% else %}
+        Unknown
+    {%- endif %}
+{% endmacro selectContent3 %}
+{% macro attribute(name, level) %}
+    {% set h1 = _self.selectHeading1(name) %}
+    {% set h2 = _self.selectHeading2(name) %}
+    {% set h3 = _self.selectHeading3(name) %}
+    {% set c1 = _self.selectContent1(name) %}
+    {% set c2 = _self.selectContent2(name) %}
+    {% set c3 = _self.selectContent3(name) %}
+    {{ _self.attributeRow(name, level, h1, c1, h2, c2, h3, c3) }}
+{% endmacro attribute %}
+{% macro propertyBox(name, value) %}
+    <div class="property-box">
+        <p class="text-muted">{{ name }}</p>
+        <p>{{ value }}</p>
+    </div>
+{% endmacro propertyBox %}
+{% macro propertyBoxCenter(name, value) %}
+    <div class="property-box">
+        <div class="text-muted">{{ name }}</div>
+        <p class="text-center">{{ value }}</p>
+    </div>
+{% endmacro propertyBoxCenter %}
+{% set hierarchy = variables.hierarchy ~ " (" ~ variables.hierarchy_value ~ ")" %}
+{% set personalities = [variables.personality_1, variables.personality_2, variables.personality_3, variables.personality_4 ]|join(", ") %}
+{% set active_power = variables.attunment_active_power %}
+<div class="fullsheet">
+    <div class="character-page">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>{{ variables.name }}</h1>
+            </div>
+            <div class="col-md-4">
+                <h2>Meteor Tale</h2>
+                <h6>Character Sheet</h6>
+            </div>
+        </div>
+        <div class="row bottom-margin">
+            <div class="col-md-4">
+                {{- _self.propertyBoxCenter("Race", variables.race) -}}
+            </div>
+            <div class="col-md-4">
+                {{- _self.propertyBoxCenter("Racial Abilities", _self.selectRacialAbilities(variables.race)) -}}
+            </div>
+            <div class="col-md-4">
+                {{- _self.propertyBoxCenter("Legacy", _self.selectLegacy(variables.race)) -}}
+            </div>
+        </div>
+        <div class="row bottom-margin">
+            <div class="col-md-3">
+                {{- _self.propertyBoxCenter("Nationality", variables.nationality) -}}
+            </div>
+            <div class="col-md-3">
+                {{- _self.propertyBoxCenter("Age", variables.age) -}}
+            </div>
+            <div class="col-md-3">
+                {{- _self.propertyBoxCenter("Religion", variables.religion) -}}
+            </div>
+            <div class="col-md-3">
+                {{- _self.propertyBoxCenter("Personality", personalities) -}}
+            </div>
+        </div>
+        <div class="row bottom-margin">
+            <div class="col-md-3">
+                {{- _self.propertyBoxCenter("Hierarchy", hierarchy) -}}
+            </div>
+            <div class="col-md-3">
+                {{- _self.propertyBoxCenter("Path", variables.path) -}}
+            </div>
+            <div class="col-md-3">
+                {{- _self.propertyBoxCenter("Path Mastery", variables.path_mastery ~ " / 1000") -}}
+            </div>
+            <div class="col-md-3">
+                {{- _self.propertyBoxCenter("Mastery Benefits", variables.mastery_benefits) -}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                {% if active_power != "No Power" %}
+                    {{ _self.propertyBox("Attunement", variables.attunement_symbol ~ " (" ~ variables.attunment_active_power ~ ")") }}
+                {% endif %}
+                {{ _self.propertyBox("Equipment", variables.equipment) }}
+            </div>
+            <div class="col-md-2">
+                <div class="property-box">
+                    <h3>Practical Skills</h3>
+                    <div>Animal Handling ({{ variables.animal_handling }})</div>
+                    <div>Blind Fighting ({{ variables.blind_fighting }})</div>
+                    <div>Climbing ({{ variables.climbing }})</div>
+                    <div>Direction sense ({{ variables.direction_sense }})</div>
+                    <div>Disguise ({{ variables.disguise }})</div>
+                    <div>Climbing ({{ variables.climbing }})</div>
+                    <div>Fishing ({{ variables.fishing }})</div>
+                    <div>Foraging ({{ variables.foraging }})</div>
+                    <div>Haggling ({{ variables.haggling }})</div>
+                    <div>Hunting ({{ variables.hunting }})</div>
+                    <div>Insight ({{ variables.insight }})</div>
+                    <div>Locksmithing ({{ variables.locksmithing }})</div>
+                    <div>Meditation ({{ variables.meditation }})</div>
+                    <div>Navigation ({{ variables.navigation }})</div>
+                    <div>Perception ({{ variables.perception }})</div>
+                    <div>Persuasion ({{ variables.persuasion }})</div>
+                    <div>Remove Traps ({{ variables.remove_traps }})</div>
+                    <div>Riding ({{ variables.riding }})</div>
+                    <div>Seduction ({{ variables.seduction }})</div>
+                    <div>Steal ({{ variables.steal }})</div>
+                    <div>Stealth ({{ variables.stealth }})</div>
+                    <div>Swimming ({{ variables.swimming }})</div>
+                    <div>Tracking ({{ variables.tracking }})</div>
+                    <div>Traveling ({{ variables.traveling }})</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="property-box">
+                    <h3>Theoretical Skills</h3>
+                    <h5>Divination</h5>
+                    <div>Astrology ({{ variables.astrology }})</div>
+                    <div>Cartomancy ({{ variables.cartomancy }})</div>
+                    <div>Fortune Telling ({{ variables.fortune_telling }})</div>
+                    <div>Geomancy ({{ variables.geomancy }})</div>
+                    <h5>Fine Arts</h5>
+                    <div>Dancing ({{ variables.dancing }})</div>
+                    <div>Music ({{ variables.music }})</div>
+                    <div>Painting ({{ variables.painting }})</div>
+                    <h5>Languages</h5>
+                    <div>Margo ({{ variables.margo }})</div>
+                    <div>Metea ({{ variables.metea }})</div>
+                    <div>Panthea ({{ variables.panthea }})</div>
+                    <div>Reyka ({{ variables.reyka }})</div>
+                    <div>Sentin ({{ variables.sentin }})</div>
+                    <div>Sign ({{ variables.sign }})</div>
+                    <div>Teyn ({{ variables.teyn }})</div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="property-box">
+                    <h5>Social</h5>
+                    <div>Culture ({{ variables.culture }})</div>
+                    <div>Dimensions ({{ variables.dimensions }})</div>
+                    <div>History ({{ variables.history }})</div>
+                    <div>Items ({{ variables.items }})</div>
+                    <div>Monsters ({{ variables.monsters }})</div>
+                    <div>Religion ({{ variables.skill_religion }})</div>
+                    <div>Warfare ({{ variables.warfare }})</div>
+                    <h3>Craft Skills</h3>
+                    <div>Alchemy ({{ variables.alchemy }})</div>
+                    <div>Blacksmithing ({{ variables.blacksmithing }})</div>
+                    <div>Enchanting ({{ variables.enchanting }})</div>
+                    <div>Leatherworking ({{ variables.leatherworking }})</div>
+                    <div>Medicine ({{ variables.medicine }})</div>
+                    <div>Woodworking ({{ variables.woodworking }})</div>
+                </div>
+            </div>
+        </div>
+        {{- _self.attribute("Might", variables.might) -}}
+        {{- _self.attribute("Speed", variables.speed) -}}
+        {{- _self.attribute("Endurance", variables.endurance) -}}
+        {{- _self.attribute("Awareness", variables.awareness) -}}
+        {{- _self.attribute("Willpower", variables.willpower) -}}
+        {{- _self.attribute("Instinct", variables.instinct) -}}
+    </div>
+</div>

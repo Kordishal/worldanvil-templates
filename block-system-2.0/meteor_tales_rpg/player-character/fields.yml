@@ -1,0 +1,569 @@
+fields:
+  religion:
+    input: select
+    label: "Religion"
+    description: "Select the religion your character is a part of."
+    options:
+      The Final Light: "The Final Light"
+      The Sentinel: "The Sentinel"
+      The Veil: "The Veil"
+      True Existence: "True Existence"
+      The Mountain God: "The Mountain God"
+      Sacred Blood: "Sacred Blood"
+      The First Phoenix: "The First Phoenix"
+  race:
+    input: select
+    label: "Race"
+    description: "Select your characters race."
+    options:
+      Gaal: Gaal
+      Gargoyle: Gargoyle
+      Medai: Medai
+      Fay: Fay
+      Serenian: Serenian
+      Sirakrat: Sirakrat
+      Sarcanta: Sarcanta
+      Brutgor: Brutgor
+      Dwarf: Dwarf
+      Human: Human
+      Elf: Elf
+  nationality:
+    input: select
+    label: "Nationality"
+    description: "Select your characters nationality."
+    options:
+      Lothenian: Lothenian
+      Armorian: Armorian
+      Tridenian: Tridenian
+      Rosian: Rosian
+      South Freelander: South Freelander
+      North Freelander: North Freelander
+      Golth: Golth
+      Gram: Gram
+      Sartian: Sartian
+      Igrite: Igrite
+      Solite: Solite
+      Caranti: Caranti
+      Orkandian: Orkandian
+      Exotian: Exotian
+      Miasarim: Miasarim
+      Antara: Antara
+      Avalian: Avalian
+      Dragorian: Dragorian
+  age:
+    input: integer
+    label: "Age"
+    description: "Your characters age."
+  path:
+    input: select
+    label: "Path"
+    description: "Select your characters path."
+    options:
+      Knight: Knight
+      Archer: Archer
+      Navarune: Navarune
+      Berserker: Berserker
+      Sword Saint: Sword Saint
+      Dragoon: Dragoon
+      Gladiator: Gladiator
+      Assassin: Assassin
+      Mantis: Mantis
+      Bard: Bard
+      Beast Mage: Beast Mage
+      Druid: Druid
+      Blood Mage: Blood Mage
+      Necromancer: Necromancer
+      Priest: Priest
+      Psionic: Psionic
+      Avatar: Avatar
+      Sentinel: Sentinel
+      Shaman: Shaman
+      Blood Warrior: Blood Warrior
+      Templar: Templar
+      Seer: Seer
+      Monk: Monk
+      Hunter: Hunter
+  path_mastery:
+    input: integer
+    label: "Path Mastery"
+  path_mastery_benefits:
+    input: text
+    label: "Mastery Benefits"
+  origin:
+    input: select
+    label: "Origin"
+    description: "Select an origin for your character."
+    options:
+      Scholar: Scholar
+      Settler: Settler
+      Drifter: Drifter
+      Hermit: Hermit
+      Outlaw: Outlaw
+      Mystic: Mystic
+      Apprentice: Apprentice
+      Artist: Artist
+      Soldier: Soldier
+      Raider: Raider
+      Merchant: Merchant
+      Slave: Slave
+      Member of an Organization: Member of an Organization
+      Oath-Bound: Oath-Bound
+  might:
+    input: select
+    label: "Might"
+    options:
+      Low: Low
+      Medium: Medium
+      High: High
+      Exceptional: Exceptional
+      Legendary: Legendary
+      Unusual: Unusual
+      Extraordinary: Extraordinary
+      Phenomenal: Phenomenal
+  speed:
+    input: select
+    label: "Speed"
+    options:
+      Low: Low
+      Medium: Medium
+      High: High
+      Exceptional: Exceptional
+      Legendary: Legendary
+      Unusual: Unusual
+      Extraordinary: Extraordinary
+      Phenomenal: Phenomenal
+  endurance:
+    input: select
+    label: "Endurance"
+    options:
+      Low: Low
+      Medium: Medium
+      High: High
+      Exceptional: Exceptional
+      Legendary: Legendary
+      Unusual: Unusual
+      Extraordinary: Extraordinary
+      Phenomenal: Phenomenal
+  awareness:
+    input: select
+    label: "Awareness"
+    options:
+      Low: Low
+      Medium: Medium
+      High: High
+      Exceptional: Exceptional
+      Legendary: Legendary
+      Unusual: Unusual
+      Extraordinary: Extraordinary
+      Phenomenal: Phenomenal
+  willpower:
+    input: select
+    label: "Willpower"
+    options:
+      Low: Low
+      Medium: Medium
+      High: High
+      Exceptional: Exceptional
+      Legendary: Legendary
+      Unusual: Unusual
+      Extraordinary: Extraordinary
+      Phenomenal: Phenomenal
+  instinct:
+    input: select
+    label: "Instinct"
+    options:
+      Low: Low
+      Medium: Medium
+      High: High
+      Exceptional: Exceptional
+      Legendary: Legendary
+      Unusual: Unusual
+      Extraordinary: Extraordinary
+      Phenomenal: Phenomenal
+  Animal Handling:
+    input: number
+    label: "Animal Handling"
+  Blind Fighting:
+    input: number
+    label: "Blind Fighting"
+  Climbing:
+    input: number
+    label: "Climbing"
+  Direction sense:
+    input: number
+    label: "Direction sense"
+  Disguise:
+    input: number
+    label: "Disguise"
+  Fishing:
+    input: number
+    label: "Fishing"
+  Foraging:
+    input: number
+    label: "Foraging"
+  Haggling:
+    input: number
+    label: "Haggling"
+  Hunting:
+    input: number
+    label: "Hunting"
+  Insight:
+    input: number
+    label: "Insight"
+  Locksmithing:
+    input: number
+    label: "Locksmithing"
+  Meditation:
+    input: number
+    label: "Meditation"
+  Navigation:
+    input: number
+    label: "Navigation"
+  Perception:
+    input: number
+    label: "Perception"
+  Persuasion:
+    input: number
+    label: "Persuasion"
+  Remove Traps:
+    input: number
+    label: "Remove Traps"
+  Riding:
+    input: number
+    label: "Riding"
+  Seduction:
+    input: number
+    label: "Seduction"
+  Steal:
+    input: number
+    label: "Steal"
+  Stealth:
+    input: number
+    label: "Stealth"
+  Swimming:
+    input: number
+    label: "Swimming"
+  Tracking:
+    input: number
+    label: "Tracking"
+  Traveling:
+    input: number
+    label: "Traveling"
+  Astrology:
+    input: number
+    label: "Astrology"
+  Cartomancy:
+    input: number
+    label: "Cartomancy"
+  Fortune Telling:
+    input: number
+    label: "Fortune Telling"
+  Geomancy:
+    input: number
+    label: "Geomancy"
+  Dancing:
+    input: number
+    label: "Dancing"
+  Music:
+    input: number
+    label: "Music"
+  Painting:
+    input: number
+    label: "Painting"
+  Margo:
+    input: number
+    label: "Margo"
+  Metea:
+    input: number
+    label: "Metea"
+  Panthea:
+    input: number
+    label: "Panthea"
+  Reyka:
+    input: number
+    label: "Reyka"
+  Sentin:
+    input: number
+    label: "Sentin"
+  Sign:
+    input: number
+    label: "Sign"
+  Teyn:
+    input: number
+    label: "Teyn"
+  Culture:
+    input: number
+    label: "Culture"
+  Dimensions:
+    input: number
+    label: "Dimensions"
+  History:
+    input: number
+    label: "History"
+  Items:
+    input: number
+    label: "Items"
+  Monsters:
+    input: number
+    label: "Monsters"
+  skill_religion:
+    input: number
+    label: "Skill Religion"
+  Warfare:
+    input: number
+    label: "Warfare"
+  Alchemy:
+    input: number
+    label: "Alchemy"
+  Blacksmithing:
+    input: number
+    label: "Blacksmithing"
+  Enchanting:
+    input: number
+    label: "Enchanting"
+  Leather Working:
+    input: number
+    label: "Leatherworking"
+  Medicine:
+    input: number
+    label: "Medicine"
+  Woodworking:
+    input: number
+    label: "Woodworking"
+  attunement:
+    input: select
+    label: "Attunement Symbol"
+    description: "Select a symbol for your character."
+    options:
+      Candle: Candle
+      Cocoon: Cocoon
+      Pawn: Pawn
+      Totem: Totem
+      Shield: Shield
+      Horn: Horn
+      Scepter: Scepter
+      Blood: Blood
+      Eye: Eye
+      Gate: Gate
+      Hourglass: Hourglass
+      Horseshoe: Horseshoe
+  attunment_active_power:
+    input: select
+    label: "Attunment Active Power"
+    options:
+      none: No Power
+      first: First Power
+      second: Second Power
+      third: Third Power
+  hierarchy:
+    input: select
+    label: "Hierarchy"
+    options:
+      The Civilized World: The Civilized World
+      The Tribal World: The Tribal World
+  hierarchy_value:
+    input: number
+    label: "Hierarchy Value"
+  personality_1:
+    input: select
+    label: "Personality 1"
+    options:
+      High temper: High temper
+      Calm: Calm
+      Cynical: Cynical
+      Sentimental: Sentimental
+      Egoist: Egoist
+      Altruist: Altruist
+      Chaotic: Chaotic
+      Lawful: Lawful
+      Pessimist: Pessimist
+      Optimist: Optimist
+      Revengeful: Revengeful
+      Forgiving: Forgiving
+      Careless: Careless
+      Analytical: Analytical
+      Arrogant: Arrogant
+      Humble: Humble
+      Coward: Coward
+      Brave: Brave
+      Greedy: Greedy
+      Charitable: Charitable
+      Rude: Rude
+      Kind: Kind
+      Repulsive: Repulsive
+      Charming: Charming
+      Fool: Fool
+      Wise: Wise
+      Stubborn: Stubborn
+      Open Minded: Open Minded
+      Impulsive: Impulsive
+      Methodical: Methodical
+      Immoral: Immoral
+      Moral: Moral
+      Curious: Curious
+      Indifferent: Indifferent
+      Superstitious: Superstitious
+      Skeptical: Skeptical
+      Chatter: Chatter
+      Discreet: Discreet
+      Hypocritical: Hypocritical
+      True: True
+      Violent: Volent
+      Pacifist: Pacifist
+      Unreliable: Unreliable
+      Loyal: Loyal
+      Weak: Weak
+      Decisive: Decisive
+  personality_2:
+    input: select
+    label: "Personality 2"
+    options:
+      High temper: High temper
+      Calm: Calm
+      Cynical: Cynical
+      Sentimental: Sentimental
+      Egoist: Egoist
+      Altruist: Altruist
+      Chaotic: Chaotic
+      Lawful: Lawful
+      Pessimist: Pessimist
+      Optimist: Optimist
+      Revengeful: Revengeful
+      Forgiving: Forgiving
+      Careless: Careless
+      Analytical: Analytical
+      Arrogant: Arrogant
+      Humble: Humble
+      Coward: Coward
+      Brave: Brave
+      Greedy: Greedy
+      Charitable: Charitable
+      Rude: Rude
+      Kind: Kind
+      Repulsive: Repulsive
+      Charming: Charming
+      Fool: Fool
+      Wise: Wise
+      Stubborn: Stubborn
+      Open Minded: Open Minded
+      Impulsive: Impulsive
+      Methodical: Methodical
+      Immoral: Immoral
+      Moral: Moral
+      Curious: Curious
+      Indifferent: Indifferent
+      Superstitious: Superstitious
+      Skeptical: Skeptical
+      Chatter: Chatter
+      Discreet: Discreet
+      Hypocritical: Hypocritical
+      True: True
+      Violent: Volent
+      Pacifist: Pacifist
+      Unreliable: Unreliable
+      Loyal: Loyal
+      Weak: Weak
+      Decisive: Decisive
+  personality_3:
+    input: select
+    label: "Personality 3"
+    options:
+      High temper: High temper
+      Calm: Calm
+      Cynical: Cynical
+      Sentimental: Sentimental
+      Egoist: Egoist
+      Altruist: Altruist
+      Chaotic: Chaotic
+      Lawful: Lawful
+      Pessimist: Pessimist
+      Optimist: Optimist
+      Revengeful: Revengeful
+      Forgiving: Forgiving
+      Careless: Careless
+      Analytical: Analytical
+      Arrogant: Arrogant
+      Humble: Humble
+      Coward: Coward
+      Brave: Brave
+      Greedy: Greedy
+      Charitable: Charitable
+      Rude: Rude
+      Kind: Kind
+      Repulsive: Repulsive
+      Charming: Charming
+      Fool: Fool
+      Wise: Wise
+      Stubborn: Stubborn
+      Open Minded: Open Minded
+      Impulsive: Impulsive
+      Methodical: Methodical
+      Immoral: Immoral
+      Moral: Moral
+      Curious: Curious
+      Indifferent: Indifferent
+      Superstitious: Superstitious
+      Skeptical: Skeptical
+      Chatter: Chatter
+      Discreet: Discreet
+      Hypocritical: Hypocritical
+      True: True
+      Violent: Volent
+      Pacifist: Pacifist
+      Unreliable: Unreliable
+      Loyal: Loyal
+      Weak: Weak
+      Decisive: Decisive
+  personality_4:
+    input: select
+    label: "Personality 4"
+    options:
+      High temper: High temper
+      Calm: Calm
+      Cynical: Cynical
+      Sentimental: Sentimental
+      Egoist: Egoist
+      Altruist: Altruist
+      Chaotic: Chaotic
+      Lawful: Lawful
+      Pessimist: Pessimist
+      Optimist: Optimist
+      Revengeful: Revengeful
+      Forgiving: Forgiving
+      Careless: Careless
+      Analytical: Analytical
+      Arrogant: Arrogant
+      Humble: Humble
+      Coward: Coward
+      Brave: Brave
+      Greedy: Greedy
+      Charitable: Charitable
+      Rude: Rude
+      Kind: Kind
+      Repulsive: Repulsive
+      Charming: Charming
+      Fool: Fool
+      Wise: Wise
+      Stubborn: Stubborn
+      Open Minded: Open Minded
+      Impulsive: Impulsive
+      Methodical: Methodical
+      Immoral: Immoral
+      Moral: Moral
+      Curious: Curious
+      Indifferent: Indifferent
+      Superstitious: Superstitious
+      Skeptical: Skeptical
+      Chatter: Chatter
+      Discreet: Discreet
+      Hypocritical: Hypocritical
+      True: True
+      Violent: Volent
+      Pacifist: Pacifist
+      Unreliable: Unreliable
+      Loyal: Loyal
+      Weak: Weak
+      Decisive: Decisive
+  equipment:
+    input: text
+    label: "Equipment"
